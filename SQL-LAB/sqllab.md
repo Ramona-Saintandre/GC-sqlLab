@@ -135,20 +135,15 @@ WHERE orders.order_id='10290'
 ## 14. Do an inner join, left join, right join on orders and customers tables.
 
 ```pgsql
-SELECT
-SELECT
-SELECT
-
+SELECT * FROM orders INNER JOIN customers ON customer_id = customers.customer_id;
+SELECT * FROM orders LEFT JOIN customers ON customer_id = customers.customer_id;
+SELECT * FROM orders RIGHT JOIN  customers ON customer_id = customers.customer_id;
 ```
 
 
 ## 15. Get first names of all employees who report to no one.
 
-```pgsql
-SELECT * FROM orders INNER JOIN customers ON
-SELECT * FROM orders LEFT JOIN customers ON
-SELECT * FROM orders RIGHT JOIN  customers ON
-```
+
 
 ## 16. Get first names of all employees who report to Andrew.
 
