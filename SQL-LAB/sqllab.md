@@ -23,7 +23,7 @@ from customers;`
 ** need to figure out how to concatinate this**
 
 `Select *FROM customers 
-Where country ='Germany';`
+Where country ='Germany;`
  
 `Select *FROM customers 
 Where country ='Canada';`
