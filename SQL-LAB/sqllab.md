@@ -130,6 +130,10 @@ SELECT MIN(quanity) FROM order_details GROUP BY order_id;
 
 ## 12. Calculate the average, max, and min of the quantity at the `order details` table,grouped by the orderid.  
 
+```pgsql
+SELECT contact_name, customers.customer_id FROM customers JOIN orders ON customers.customer_id= orders.customer_id 
+WHERE orders.order_id='10290'
+```
 
 
 
