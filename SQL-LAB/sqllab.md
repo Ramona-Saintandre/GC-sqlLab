@@ -30,8 +30,11 @@ From customers;
 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.
 
 
-6. Get all orders where the ShipRegion is not equal to NULL.
+6. Get all orders where the ShipRegion is not equal to NULL.  
 
+SELECT *
+FROM orders
+WHERE orders.ship_region IS NULL;
 
 7. Get all customers ordered by the country, then by the city.
 
