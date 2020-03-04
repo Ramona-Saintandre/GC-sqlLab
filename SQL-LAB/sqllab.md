@@ -8,8 +8,17 @@ https://raw.githubusercontent.com/pthom/northwind_psql/master/northwind.sql
 DETAILS:
 Write SQL queries to do the following tasks. Record these queries in a text document so you
 can repeat them in class.
-1. Select all the records from the "Customers" table.
+1. Select all the records from the "Customers" table. 
+
+SELECT *
+from customers;
+
 2. Get distinct countries from the Customers table.
+
+SELECT country 
+From customers;
+
+
 3. Get all the records from the table Customers where the Customer's ID starts with "BL".
 4. Get the first 100 records of the orders table.
 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.
