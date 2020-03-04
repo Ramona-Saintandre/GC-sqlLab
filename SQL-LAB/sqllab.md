@@ -25,18 +25,40 @@ From customers;
 
 
 4. Get the first 100 records of the orders table.
+
+
 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.
+
+
 6. Get all orders where the ShipRegion is not equal to NULL.
+
+
 7. Get all customers ordered by the country, then by the city.
+
+
 8. Add a new customer to the customers table. You can use whatever values/
-9. Update all ShipRegion to the value 'EuroZone' in the Orders table, where the
-ShipCountry is equal to France.
-10. Delete all orders from `order_details` that have a quantity of 1.
+
+
+9. Update all ShipRegion to the value 'EuroZone' in the Orders table, where the ShipCountry is equal to France.  
+
+
+10. Delete all orders from `order_details` that have a quantity of 1  
+
+
 11. Calculate the average, max, and min of the quantity at the `order details` table.
-12. Calculate the average, max, and min of the quantity at the `order details` table,
-grouped by the orderid.
+
+
+12. Calculate the average, max, and min of the quantity at the `order details` table,grouped by the orderid.  
+
+
 13. Find the CustomerID that placed order 10290 (orders table)
-BONUS:
+
+
+## BONUS:
 14. Do an inner join, left join, right join on orders and customers tables.
+
+
 15. Get first names of all employees who report to no one.
+
+
 16. Get first names of all employees who report to Andrew.
