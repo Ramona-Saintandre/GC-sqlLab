@@ -120,8 +120,13 @@ WHERE quanity=1;
 
 ## 11. Calculate the average, max, and min of the quantity at the `order details` table.
 
+**NOTE** Watch th spaces in SQL
+```pgsql
+SELECT AVG(quanity) FROM order_details GROUP BY order_id;
+SELECT MAX(quanity) FROM order_details GROUP BY order_id; 
+SELECT MIN(quanity) FROM order_details GROUP BY order_id;
 
-
+```
 
 ## 12. Calculate the average, max, and min of the quantity at the `order details` table,grouped by the orderid.  
 
