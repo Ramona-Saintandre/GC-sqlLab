@@ -34,18 +34,15 @@ Where country ='Canada';
 
 ## 3. Get all the records from the table Customers where the Customer's ID starts with "BL".  
 
-
 ```pgsql
 Select * FROM customers 
 Where customer_id LIKE 'BL%';
 ```
-
 ## 4. Get the first 100 records of the orders table.
 
 ```pgsql
 Select * FROM orders LIMIT 100;
 ```
-
 ## 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.  
 
 ```pgsql
@@ -89,21 +86,18 @@ ORDER BY country,city;
 ```pgsql
 insert into public.customers (customer_id, company_name,contact_name,contact_title) values ('GCAHB','vaneerden','Ramona Saintandre','Helpdesk')
 ```
-
 ## 9. Update all ShipRegion to the value 'EuroZone' in the Orders table, where the ShipCountry is equal to France.  
 
 ```pgsql
 UPDATE orders SET ship_region='EuroZone' 
 WHERE ship_country='France';
 ```
-
 ## 10. Delete all orders from `order_details` that have a quantity of 1 
 
 ```pgsql
 DELETE  FROM order_details 
 WHERE quanity=1;
 ```
-
 ## 11. Calculate the average, max, and min of the quantity at the `order details` table.
 
 ```pgsql
@@ -111,7 +105,6 @@ SELECT order_id, AVG(quantity)FROM order_details GROUP BY order_id;
 SELECT order_id, MAX(quantity)FROM order_details GROUP BY order_id;
 SELECT order_id, MIN(quantity)FROM order_details GROUP BY order_id;
 ```
-
 ## 12. Calculate the average, max, and min of the quantity at the `order details` table,grouped by the orderid.  
 
 **NOTE** Watch th spaces in SQL
@@ -120,7 +113,6 @@ SELECT AVG(quanity) FROM order_details GROUP BY order_id;
 SELECT MAX(quanity) FROM order_details GROUP BY order_id; 
 SELECT MIN(quanity) FROM order_details GROUP BY order_id;
 ```
-
 ## 13. Find the CustomerID that placed order 10290 (orders table)
 
   ```pgsql
@@ -129,7 +121,6 @@ FROM customers JOIN orders
 ON customers.customer_id= orders.customer_id 
 WHERE orders.order_id='10290'
 ```
-
 ## BONUS:
 
 ## 14. Do an inner join, left join, right join on orders and customers tables.
@@ -143,7 +134,6 @@ SELECT * FROM orders INNER JOIN customers ON customer_id = customers.customer_id
 SELECT * FROM orders LEFT JOIN customers ON customer_id = customers.customer_id;
 SELECT * FROM orders RIGHT JOIN  customers ON customer_id = customers.customer_id;```
 
-
 ## 15. Get first names of all employees who report to no one.
 
 [SQL NULL Functions](https://www.w3schools.com/sql/sql_isnull.asp)
@@ -151,7 +141,6 @@ SELECT * FROM orders RIGHT JOIN  customers ON customer_id = customers.customer_i
 ```pgsql
 SELECT first_name FROM employees WHERE reports_to IS NULL;
 ```
-
 ## 16. Get first names of all employees who report to Andrew.
 
 **Need to double check this**
@@ -160,7 +149,6 @@ SELECT first_name FROM employees WHERE reports_to IS NULL;
 SELECT first_name FROM employees 
 WHERE  reports_to=2;
 ```
-
 ```pgsql
 SELECT first_name FROM employees
 WHERE first_name='Andrew'; (2)
