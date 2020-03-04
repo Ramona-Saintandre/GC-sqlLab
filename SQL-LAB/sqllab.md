@@ -134,14 +134,15 @@ SELECT * FROM orders INNER JOIN customers ON customer_id = customers.customer_id
 SELECT * FROM orders LEFT JOIN customers ON customer_id = customers.customer_id;
 SELECT * FROM orders RIGHT JOIN  customers ON customer_id = customers.customer_id;```
 
+## 15. Get first names of all employees who report to no one.
 
-
-
-[SQL NULL Functions](https://www.w3schools.com/sql/sql_isnull.asp)
-[SQL NULL Values](https://www.w3schools.com/sql/sql_null_values.asp)
 ```pgsql
 SELECT first_name FROM employees WHERE reports_to IS NULL;
 ```
+[SQL NULL Functions](https://www.w3schools.com/sql/sql_isnull.asp)  
+[SQL NULL Values](https://www.w3schools.com/sql/sql_null_values.asp)
+
+
 ## 16. Get first names of all employees who report to Andrew.
 
 **Need to double check this**
