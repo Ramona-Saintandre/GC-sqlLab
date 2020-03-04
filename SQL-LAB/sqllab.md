@@ -120,6 +120,10 @@ WHERE quanity=1;
 
 ## 11. Calculate the average, max, and min of the quantity at the `order details` table.
 
+
+
+## 12. Calculate the average, max, and min of the quantity at the `order details` table,grouped by the orderid.  
+
 **NOTE** Watch th spaces in SQL
 ```pgsql
 SELECT AVG(quanity) FROM order_details GROUP BY order_id;
@@ -128,18 +132,12 @@ SELECT MIN(quanity) FROM order_details GROUP BY order_id;
 
 ```
 
-## 12. Calculate the average, max, and min of the quantity at the `order details` table,grouped by the orderid.  
+## 13. Find the CustomerID that placed order 10290 (orders table)
 
-```pgsql
+  ```pgsql
 SELECT contact_name, customers.customer_id FROM customers JOIN orders ON customers.customer_id= orders.customer_id 
 WHERE orders.order_id='10290'
 ```
-
-
-
-## 13. Find the CustomerID that placed order 10290 (orders table)
-
-  
 
 
 ## BONUS:
