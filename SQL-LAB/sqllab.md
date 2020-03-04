@@ -18,15 +18,18 @@ can repeat them in class.
 from customers;`
 
 2. Get distinct countries from the Customers table.
+** need to figure out how to concatinate this**
 
-`SELECT country 
-From customers;`  
-
-
+`Select *FROM customers 
+Where country ='Germany';`
+ 
+`Select *FROM customers 
+Where country ='Canada';`
 
 3. Get all the records from the table Customers where the Customer's ID starts with "BL".  
 
-
+Select * FROM customers 
+Where customer_id LIKE 'BL%';
 
 4. Get the first 100 records of the orders table.  
 
