@@ -143,7 +143,9 @@ SELECT * FROM orders RIGHT JOIN  customers ON customer_id = customers.customer_i
 
 ## 15. Get first names of all employees who report to no one.
 
-
+```pgsql
+SELECT first_name FROM employees WHERE reports_to IS NULL;
+```
 
 ## 16. Get first names of all employees who report to Andrew.
 
