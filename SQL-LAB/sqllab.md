@@ -145,11 +145,23 @@ SELECT
 ## 15. Get first names of all employees who report to no one.
 
 ```pgsql
-SELECT
+SELECT * FROM orders INNER JOIN customers ON
+SELECT * FROM orders LEFT JOIN customers ON
+SELECT * FROM orders RIGHT JOIN  customers ON
 ```
 
 ## 16. Get first names of all employees who report to Andrew.
 
+**Need to double check this**
+
 ```pgsql
-SELECT first_name FROM employees WHERE reports_to=2;
+SELECT first_name FROM employees 
+WHERE  reports_to=2;
+```
+
+```pgsql
+SELECT first_name FROM employees
+WHERE first_name='Andrew'; (2)
+SELECT first_name FROM employees 
+WHERE reportsto ='2';
 ```
