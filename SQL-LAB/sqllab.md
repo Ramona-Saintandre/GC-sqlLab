@@ -28,11 +28,12 @@ Where country ='Canada';`
 
 3. Get all the records from the table Customers where the Customer's ID starts with "BL".  
 
-Select * FROM customers 
-Where customer_id LIKE 'BL%';
+`Select * FROM customers 
+Where customer_id LIKE 'BL%';`
 
 4. Get the first 100 records of the orders table.  
 
+`Select * FROM orders LIMIT 100;`
 
 
 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.  
