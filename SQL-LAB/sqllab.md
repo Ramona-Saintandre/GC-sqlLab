@@ -1,6 +1,8 @@
 ## SQL LAB 
+
+**[W3schools SQL](https://www.w3schools.com/sql/default.asp)**<br>  
 **TASK**:  
-Practice writing SQL statements on the Northwind database.  
+Practice writing SQL statements on the Northwind database. <br> 
 
 **SETUP**:  
 ● In pgAdmin, create a database called northwind.  
@@ -9,7 +11,7 @@ https://raw.githubusercontent.com/pthom/northwind_psql/master/northwind.sql
 
 **DETAILS**:  
 Write SQL queries to do the following tasks. Record these queries in a text document so you
-can repeat them in class.  
+can repeat them in class. <br>   
 [**NOTES**](https://www.postgresqltutorial.com/postgresql-select/)
 
 1. Select all the records from the "Customers" table.   
@@ -67,6 +69,8 @@ ORDER BY country,city;`
 
 
 8. Add a new customer to the customers table. You can use whatever values  
+
+[create a user](https://chartio.com/docs/data-sources/faqs/create-a-user-with-pgadmin/)
 
 `insert into public.customers (customer_id, company_name,contact_name,contact_title) values ('GCAHB','vaneerden','Ramona Saintandre','Helpdesk')`
 
