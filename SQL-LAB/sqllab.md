@@ -35,16 +35,28 @@ Where customer_id LIKE 'BL%';`
 
 `Select * FROM orders LIMIT 100;`
 
-
 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.  
 
+`Select * FROM customers 
+WHERE 
+postal_code='1010' 
+OR
+postal_code='3012'
+OR
+postal_code='12209'
+OR
+postal_code='05023';`
 
 
 6. Get all orders where the ShipRegion is not equal to NULL.    
 
+**need to find out what is different, both work**
 `SELECT *
 FROM orders
-WHERE orders.ship_region IS NULL;`
+WHERE orders.ship_region IS NOT null;`
+
+`Select * FROM orders
+Where ship_region IS NOT null;` 
 
 7. Get all customers ordered by the country, then by the city.  
 
