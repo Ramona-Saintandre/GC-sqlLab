@@ -38,6 +38,7 @@ From customers;
 
 8. Add a new customer to the customers table. You can use whatever values/
 
+insert into public.customers (customer_id, company_name,contact_name,contact_title) values ('GCAHB','vaneerden','Ramona Saintandre','Helpdesk')
 
 9. Update all ShipRegion to the value 'EuroZone' in the Orders table, where the ShipCountry is equal to France.  
 
