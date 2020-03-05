@@ -1,5 +1,6 @@
 ASSESSMENT 7 EXERCISE
-Overview: Within PGAdmin, create the following table and alter it as requested.
+Overview:   
+Within PGAdmin, create the following table and alter it as requested.
 id first_name last_name rank weapon midichlorians
 1 Obi-wan Kenobi Retired Jedi lightsaber 13400
 2 Luke Skywalker Jedi lightsaber 14500
