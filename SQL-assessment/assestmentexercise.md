@@ -40,6 +40,15 @@ SQL code. You do not need to submit the results of the queries, just the SQL cod
 ○ rank - varchar 30  
 ○ weapon - varchar 30  
 
+```pgsql
+CREATE TABLE star_wars (
+  id serial, primary key,
+  first_name varchar (20),
+  last_name varchar (20),
+  rank varchar (30),
+  weapon varchar (30)
+);
+```
 
 **2. Add the 5 people from above to the table.**  
 **3. Update the person with the id of 3 to have a last_name of Sidious .**  
