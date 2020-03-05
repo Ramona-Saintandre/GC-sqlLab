@@ -1,4 +1,10 @@
-[Creating a PostgreSQL DB Instance and Connecting to a Database on a PostgreSQL DB Instance](https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/)
+[Creating a PostgreSQL DB Instance and Connecting to a Database on a PostgreSQL DB Instance](https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/)  
+
+[https://www.tutorialspoint.com/postgresql/postgresql_create_table.htm](https://www.tutorialspoint.com/postgresql/postgresql_create_table.htm)
+
+[PostgreSQL Tutorial](https://w3resource.com/PostgreSQL/tutorial.php)
+
+
 
 ## ASSESSMENT 7 EXERCISE
 **Overview:** 
@@ -33,7 +39,7 @@ SQL code. You do not need to submit the results of the queries, just the SQL cod
 ○ last_name - varchar 20  
 ○ rank - varchar 30  
 ○ weapon - varchar 30  
- 
+
 
 **2. Add the 5 people from above to the table.**  
 **3. Update the person with the id of 3 to have a last_name of Sidious .**  
