@@ -46,6 +46,10 @@ CREATE TABLE star_wars(
 );
 ```    
 ## 2. Add the 5 people from above to the table.
+```pgsql
+INSERT INTO starwars (first_name,last,rank,weapon)
+VALUES ('Obi-wan','Kenobi','Retired Jedi','lightsaber')
+```
 
 
 3. Update the person with the id of 3 to have a last_name of Sidious .  
