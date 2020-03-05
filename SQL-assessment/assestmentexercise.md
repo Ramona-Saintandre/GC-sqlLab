@@ -45,7 +45,9 @@ CREATE TABLE star_wars(
   midichlorians interger
 );
 ```    
-## 2. Add the 5 people from above to the table.  
+## 2. Add the 5 people from above to the table.
+
+
 3. Update the person with the id of 3 to have a last_name of Sidious .  
 4. Remove the person with the id of 4 .  
 5. Select all people that have a first_name of Skywalker .  
